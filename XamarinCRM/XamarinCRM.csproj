@@ -41,6 +41,7 @@
     <Compile Include="AppInitializer.cs" />
     <Compile Include="FilamentsTests.cs" />
     <Compile Include="ProductTests.cs" />
+    <Compile Include="OrderTests.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
