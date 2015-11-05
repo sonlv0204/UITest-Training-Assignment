@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="CustomerTests.cs" />
     <Compile Include="AppInitializer.cs" />
+    <Compile Include="ExamineLead.cs" />
     <Compile Include="FilamentsTests.cs" />
     <Compile Include="ProductTests.cs" />
     <Compile Include="OrderTests.cs" />
