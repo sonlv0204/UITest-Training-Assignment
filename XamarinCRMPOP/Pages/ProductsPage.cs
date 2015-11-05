@@ -12,7 +12,7 @@ namespace XamarinCRMPOP
 
         public void SelectProduct(string productName)
         {
-            app.Tap(productName);
+            app.PressEnter();
 
         }
     }

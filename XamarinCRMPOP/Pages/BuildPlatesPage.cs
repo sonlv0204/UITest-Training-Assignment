@@ -13,7 +13,7 @@ namespace XamarinCRMPOP
 
         public void SelectItem(string itemName)
         {
-            app.Tap(itemName);
+            app.ScrollTo(itemName);
         }
     }
 }
