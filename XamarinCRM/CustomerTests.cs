@@ -17,10 +17,10 @@ namespace XamarinCRM
             //and verify the name, phone and address fields are present
 
             app.Tap(x => x.Class("FormsTextView").Text("SKIP SIGN IN (demo)"));
-            app.Screenshot("Tapped on view FormsTextView with Text: 'SKIP SIGN IN (demo)'");
+            app.Screenshot("Tapped on: 'SKIP SIGN IN (demo)'");
 
             app.Tap(x => x.Class("TextFieldView").Text("Customers"));
-            app.Screenshot("Tapped on view TextView with Text: 'Customers'");
+            app.Screenshot("Tapped on: 'Customers'");
 
             app.Tap((x => x.Class("ViewCellRenderer_ViewCellContainer").Index(0)));
             app.Screenshot("Selected first customer present");
