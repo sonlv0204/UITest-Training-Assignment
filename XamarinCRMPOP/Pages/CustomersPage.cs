@@ -11,7 +11,7 @@ namespace XamarinCRMPOP
         public CustomersPage(AndroidApp app)
             : base(app, "Customers")
         {
-            FirstContact = x => x.Class("LabelRenderer").Index(0).Child(0);
+            FirstContact = x => x.Id("LabelRenderer").Index(0).Child(0);
         }
 
         public void ClickFirstContact()

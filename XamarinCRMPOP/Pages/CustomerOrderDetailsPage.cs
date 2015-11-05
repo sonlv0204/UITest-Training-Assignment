@@ -17,7 +17,7 @@ namespace XamarinCRMPOP
         public CustomerOrderDetailsPage(AndroidApp app)
             : base(app, "Company")
         {
-            ProductField = x => x.Class("EntryEditText").Descendant(0);
+            ProductField = x => x.Class("EditTextEnter").Descendant(0);
             PriceField = x => x.Class("EntryEditText").Descendant(1);
             DateField = x => x.Class("EditText").Index(0);
         }
