@@ -9,9 +9,13 @@ using Xamarin.UITest.Queries;
 namespace XamarinCRM
 {
     [TestFixture]
-    public class Tests
+    public abstract class BaseTest
     {
-        AndroidApp app;
+        protected AndroidApp app;
+
+        protected BaseTest()
+        {
+        }
 
         [SetUp]
         public void BeforeEachTest()
@@ -22,11 +26,6 @@ namespace XamarinCRM
 				.StartApp();
         }
 
-        [Test]
-        public void AppLaunches()
-        {
-            app.Screenshot("First screen.");
-        }
     }
 }
 
