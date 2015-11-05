@@ -20,7 +20,7 @@ namespace XamarinCRMPOP
         public LeadDetailsPage(AndroidApp app)
             : base(app, "Opportunity")
         {
-                ContactTab = x => x.Id("action_bar_container").Descendant().Text("Contact");
+                ContactTab = x => x.Descendant("Contact");
                 EditCompany = x => x.Marked("Company").Sibling();
                 EditIndustry = x => x.Class("android.widget.EditText").Index(1);
                 EditSize = x => x.Marked("Size").Sibling();

@@ -24,7 +24,7 @@ namespace XamarinCRMPOP
         public LeadContactPage(AndroidApp app)
             : base(app, "Phone")
         {
-            DetailsTab = x => x.Id("action_bar_container").Descendant().Text("Details");
+            DetailsTab = x => x.Index(9);
             RoleField = x => x.Marked("Role").Sibling();
             FirstNameField = x => x.Marked("First Name").Sibling();
             LastNameField = x => x.Marked("Last Name").Sibling();
