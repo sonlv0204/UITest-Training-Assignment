@@ -13,7 +13,7 @@ namespace XamarinCRMPOP
         [Test]
         public void SelectingFilamentColor()
         {
-            string color = "YLW";
+            string color = "YWL";
 
             new GlobalPage(app)
                 .NavigateToProducts();
@@ -34,7 +34,7 @@ namespace XamarinCRMPOP
                 .GoBack();
 
             new ThreeDFilamentPage(app)
-                .SelectPart("ABS Filament");
+                .SelectPart("PLA Filament");
 
             new ABSFilamentPage(app)
                 .SelectColor(color);

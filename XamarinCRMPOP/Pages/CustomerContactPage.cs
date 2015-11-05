@@ -28,7 +28,7 @@ namespace XamarinCRMPOP
         {
             app.WaitForElement("Contact", timeoutMessage: "Contact info not present");
             app.WaitForElement("Phone", timeoutMessage: "Phone info not present");
-            app.WaitForElement("Address", timeoutMessage: "Address info not present");
+            app.WaitForElement("Adress", timeoutMessage: "Address info not present");
 
             return this;
         }

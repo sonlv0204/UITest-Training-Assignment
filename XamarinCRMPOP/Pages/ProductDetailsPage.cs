@@ -6,7 +6,7 @@ namespace XamarinCRMPOP
 {
     public class ProductDetailsPage : BasePage
     {
-        readonly Query AddToOrderButton = x => x.Marked("ADD TO ORDER");
+        readonly Query AddToOrderButton = x => x.Marked("Add to order");
 
         public ProductDetailsPage(AndroidApp app)
             : base(app, "action_bar_container")
