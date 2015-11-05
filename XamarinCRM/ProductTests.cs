@@ -23,13 +23,13 @@ namespace XamarinCRM
             app.Screenshot("Tapped on view TextView with Text: 'Products'");
 
             app.Tap(x => x.Class("FormsTextView").Text("The flat surface upon which 3D objects are printed."));
-            app.Screenshot("Tapped on view FormsTextView with Text: 'The flat surface upon which 3D objects are printed.'");
+            app.Screenshot("Tapped on Build Plates");
 
             app.WaitForElement(x => x.Marked("BLD-PLT-PLA"));
             app.Screenshot("On Build Plates Page");
 
             app.Tap(x => x.Class("FormsTextView").Text("A heated build plate for ABS filament projects."));
-            app.Screenshot("Tapped on view FormsTextView with Text: 'A heated build plate for ABS filament projects.'");
+            app.Screenshot("Tapped on BOLD-PLT-ABS ");
 
             app.WaitForElement(x => x.Marked("BLD-PLT-ABS"));
             app.Screenshot("On BLD-PLT-ABS Build Plates Page");
