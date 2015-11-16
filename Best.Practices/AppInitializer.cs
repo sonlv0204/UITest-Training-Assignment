@@ -23,7 +23,7 @@ namespace Best.Practices
             app = ConfigureApp
 				.Android
                 .ApkFile ("../../../com.xamarin.xamarincrm-Signed.apk")
-				.StartApp();
+                .StartApp(Xamarin.UITest.Configuration.AppDataMode.DoNotClear);
         }
 
     }
