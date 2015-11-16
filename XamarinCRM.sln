@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinCRM", "XamarinCRM\Xa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinCRMPOP", "XamarinCRMPOP\XamarinCRMPOP.csproj", "{407A8C95-EDE0-44B0-93FA-B5EF3E1BB5F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best.Practices", "Best.Practices\Best.Practices.csproj", "{427DF961-FDB9-48D9-8B3A-34DCDC1F61B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{407A8C95-EDE0-44B0-93FA-B5EF3E1BB5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{407A8C95-EDE0-44B0-93FA-B5EF3E1BB5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{407A8C95-EDE0-44B0-93FA-B5EF3E1BB5F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{427DF961-FDB9-48D9-8B3A-34DCDC1F61B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427DF961-FDB9-48D9-8B3A-34DCDC1F61B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427DF961-FDB9-48D9-8B3A-34DCDC1F61B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427DF961-FDB9-48D9-8B3A-34DCDC1F61B3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D52C4688-AB1F-4853-81CD-892F7BB2AD4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D52C4688-AB1F-4853-81CD-892F7BB2AD4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D52C4688-AB1F-4853-81CD-892F7BB2AD4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
