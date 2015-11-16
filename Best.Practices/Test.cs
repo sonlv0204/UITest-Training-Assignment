@@ -9,13 +9,17 @@ namespace Best.Practices
     {
         public AndroidApp app;
 
-        public void Setup()
+        public void Setup(bool clear)
         { 
-            app = ConfigureApp
+            var appConfig = ConfigureApp
                 .Android
-                .ApkFile("../../../com.xamarin.xamarincrm-Signed.apk")
-//                .StartApp();
-                .StartApp(Xamarin.UITest.Configuration.AppDataMode.DoNotClear);
+                .ApkFile("../../../com.xamarin.xamarincrm-Signed.apk");
+            
+            if (clear)
+                app = appConfig.StartApp();
+            else
+                app = appConfig.StartApp(Xamarin.UITest.Configuration.AppDataMode.DoNotClear);
+            
         }
 
         public void SignIn()
@@ -36,7 +40,7 @@ namespace Best.Practices
         [Test]
         public void TryCatchTest()
         {
-            Setup();
+            Setup(false);
             SignIn();
 
             try
@@ -50,6 +54,20 @@ namespace Best.Practices
         [Test]
         public void LoopTest()
         {
+            Setup(true);
+
+            app.Tap("SKIP SIGN IN (demo)");
+            app.WaitForElement("6-Week Sales");
+
+            CustomScrollDownTo("Rockridge Hotel", 4);
+        }
+
+        private void CustomScrollDownTo(string marked, int maxTries)
+        {
+            // TODO: Scroll down until the "marked" element is visible or maxTries have been met
+
+            // TimeoutException is thrown if the element isn't found before maxTries is reached
+            throw new TimeoutException("Unable to find element marked: '" + marked + "'");
         }
     }
 }

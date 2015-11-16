@@ -38,7 +38,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="AppInitializer.cs" />
     <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
