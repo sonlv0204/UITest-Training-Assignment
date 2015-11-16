@@ -64,7 +64,11 @@ namespace Best.Practices
 
         private void CustomScrollDownTo(string marked, int maxTries)
         {
-            // TODO: Scroll down until the "marked" element is visible or maxTries have been met
+
+            for (int i = 0; i < maxTries; i++)
+            {
+                // TODO: Scroll down until the "marked" element is visible or maxTries have been met
+            }
 
             // TimeoutException is thrown if the element isn't found before maxTries is reached
             throw new TimeoutException("Unable to find element marked: '" + marked + "'");
